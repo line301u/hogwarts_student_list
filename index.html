@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hogwarts Student List</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Meddon&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <header>
+    <div id="header_background">
+        <div id="background_image"></div>
+      <div id="header_typo">
+        <h1 class="h1_1">Hogwarts</h1>
+        <h1 class="h1_2">Student List<h1>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <nav>
+      <div id="filter_sort_wrapper">
+        <div id="filter">Filter ↓</div>
+        <div id="filter_options" class="hidden">
+          <button class="filter" data-action="filter" data-filter="Gryffindor">Gryffindorr</button>
+          <button class="filter" data-action="filter" data-filter="Hufflepuff">Hufflepuff</button>
+          <button class="filter" data-action="filter" data-filter="Ravenclaw">Ravenclaw</button>
+          <button class="filter" data-action="filter" data-filter="Slytherin">Slytherin</button>
+          <button class="filter" data-action="filter" data-filter="expelled">expelled</button>
+          <button class="filter" data-action="filter" data-filter="non_expelled">non_expelled</button>
+          <button class="filter" data-action="filter" data-filter="responsibilities">responsibilities</button>
+        </div>
+
+        <div id="sort">Sort ↓</div>
+        <div id="sort_options" class="hidden">
+          <button class="sort" data-action="sort" data-filter="firstname">firstname</button>
+          <button class="sort" data-action="sort" data-filter="Lastname">Lastname</button>
+          <button class="sort" data-action="sort" data-filter="House">House</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="studentlist_template">
+        <template>
+          <article id="template-article">
+            <img class="student_image" src="" alt="" />
+            <h2 class="student_name"></h2>
+            <p class="student_house"></p>
+          </article>
+        </template>
+      </section>
+
+
+      <section id="student_popup" class="hidden">
+        <article>
+            <button class="luk-knap">X</button>
+            <div class="popup_sectionwrapper">
+                <img class="student_image_popup" src="" alt="" />
+                    <h2>Fullname: <span class="student_fullname"></span></p>
+                    <p>Firstname: <span class="student_firstname"></span></p>
+                    <p>Middlename: <span class="student_middlename"></span></p>
+                    <p>Lastname: <span class="student_lastname"></span></p>
+                    <p>House Crest: <span class="house_crest"></span></p>
+                    <p>Blood status: <span class="blood_status"></span></p>
+                    <p class="prefect"></p>
+                    <p class="expelled"></p>
+                    <p class="inquisitorial_squad"></p>
+
+                    <button class="expel" type="button">Expel</button>
+                    <button class="add_prefect" type="button">Add as prefect</button>
+                    <button class="add_to_squad" type="button">Make a member of the inquisitorial squad</button>
+            </div>
+        </article>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+}
+
+#header_background {
+  height: 100vh;
+  width: 100vw;
+  background-color: #181818;
+}
+
+#background_image {
+  background-image: url("img/background_image.jpeg");
+  height: 100vh;
+  width: 100vw;
+  opacity: 8%;
+}
+
+.h1_1 {
+  top: 32%;
+  left: 15%;
+  position: absolute;
+  color: rgb(255, 247, 209);
+  font-size: 9rem;
+  font-family: "Playfair Display SC", serif;
+}
+
+.h1_2 {
+  top: 49%;
+  left: 40%;
+  position: absolute;
+  color: rgb(255, 247, 209);
+  font-size: 5rem;
+  font-family: "Meddon", cursive;
+  font-weight: 100;
+}
+
+body {
+  background-color: #181818;
+}
+
+#filter_sort_wrapper {
+  width: 100vw;
+  height: 60px;
+  background-image: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#filter,
+#sort {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#filter_options {
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+#student_popup {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.815);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+
+  display: none;
+}
